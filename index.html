@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</head>
+
+<body>
+    <h1>Lista de tarefas</h1>
+    <header>
+        <input type="text" name="input" id="input-adicionar" placeholder="Digite sua Tarefa">
+        <div class="container-buttons">
+            <button onclick="adicionarTarefa()" id="adicionar">Adicionar</button>
+            <button onclick="procurarTarefa()" id="procurar">Procurar</button>
+        </div>
+    </header>
+
+    <main id="areaLista">
+        <button onclick="listarTarefas()" id="mostrar">
+            Mostrar Lista <i id="eye" class="iconify" data-icon="mdi-eye"></i>
+        </button>
+        <div id="lista" class="container-oculto">
+        </div>
+    </main>
+    <script src="./projeto.js"></script>
+
+</body>
+
+</html>

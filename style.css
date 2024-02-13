@@ -1,0 +1,176 @@
+body {
+    background-color: #eeee;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto auto;
+}
+
+input {
+    height: 120px;
+    font-size: 2rem;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.container-buttons {
+    display: flex;
+    flex-direction: column;
+    max-height: 127px;
+}
+
+button#adicionar {
+    width: 150%;
+    cursor: pointer;
+    font-size: 13px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 120px;
+    border-top-right-radius: 10px; 
+}
+
+button#adicionar:hover {
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+button#procurar {
+    width: 150%;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 126px;
+    border-bottom-right-radius: 10px; 
+}
+
+button#procurar:hover {
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+#areaLista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto auto;
+    padding-top: 40px;
+}
+
+#mostrar {
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    padding-top: 40px;
+}
+
+.container-oculto {
+    display: none;
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+}
+
+.item-oculto {
+    display: none;
+}
+
+.item.clicado {
+    background-color: #d4f6d9;
+}
+
+.item.clicado .item-nome {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.item-icone {
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.item-nome {
+    flex: 55%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item-botao {
+    display: flex;
+    justify-content: space-between;
+    flex: 15%;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 50%;
+}
+
+.edit {
+    background-color: rgb(168, 168, 164);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 50%;
+}
+
+.edit .iconify {
+    margin-right: 3px;
+}
+
+.delete i {
+    margin-inline-start: 2px;
+}
+
+[data-icon="mdi-check-circle"] {
+    color: green;
+}
+
+
+img {
+    width: 57px;
+    height: 57px;
+}
+
+.dragging {
+    opacity: 0.5;
+}
